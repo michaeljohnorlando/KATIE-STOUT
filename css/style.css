@@ -1,0 +1,118 @@
+body{
+  font-family: 'Reenie Beanie', cursive;
+}
+a:link{
+  text-decoration: none;
+  color: black;
+}
+#background{
+  position: absolute;
+  bottom: -91px;
+  width: 100vw;
+  z-index: -2;
+}
+
+#title{
+  width: 75%;
+  font-size: 700%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tp_nav{
+  z-index: 2;
+  transition-duration: .5s;
+  position:absolute;
+  right: 0;
+  top:   -371px;
+  font-size: 300%;
+  list-style-type: none;
+}
+
+#tp_list_extend{
+  z-index: 1;
+  transform: translate(-50px,322px);
+  width: 261px;}
+#tp_extend{
+  z-index: 1;
+  transform: translate(-94px,322px);
+  width: 261px;
+}
+li{
+  text-decoration: none;
+}
+
+#navagation:hover > .tp_nav{
+  transform: translate(0px,168px);
+}
+#navagation:hover > #tp_extend{
+  transform: translate(-94px,700px);
+}
+#navagation:hover > #tp_list_extend{
+  transform: translate(-50px,720px);
+}
+
+#mirror_girl{
+  position: absolute;
+  bottom: 23px;
+  left: 66px;
+}
+#mirror_girl_link:link{
+  text-decoration: none;
+}
+#mirror_girl_link{
+  font-size: 415%;
+  color: black;
+  position: absolute;
+  transform: translate(78px,-459px);
+}
+#lamp_girl{
+  height: 55vh;
+  position: absolute;
+  bottom: 129px;
+  left: 200px;
+  z-index: -1;
+}
+
+#share{
+  margin: 0px;
+  align-items: center;
+  height: 15vh;
+  position: absolute;
+  left: 32vw;
+  bottom: -30px;
+  display:flex;
+  flex-direction: row;
+}
+#share h2{
+  font-size: 200%;
+  width: 6em;
+}
+#about_text{
+  padding-left: 28%;
+  width: 39%;
+  font-size: 1.5em;
+}
+#about_img{
+  position: absolute;
+  bottom: 6em;
+  right: 2em;
+  height: 52vh;
+}
+
+#doors{
+  display:flex;
+  flex-direction: column;
+}
+.door_section{
+  display: flex;
+  flex-direction: row;
+}
+.door{
+  padding: 0em 2em 2em 2em;
+  height: 70vh;
+}
+#door_text{
+  padding: 2em;
+  font-size: 2em;
+}
