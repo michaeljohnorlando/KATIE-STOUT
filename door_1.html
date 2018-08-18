@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css\style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+  <script src="https://code.jquery.com/pep/0.4.1/pep.js"></script>
+</head>
+
+  <section id="navagation">
+    <h1 class="tp_nav" id="tp_mobile">KATIE STOUT</h1>
+    <img class="tp_nav" id="tp_extend" src="imgs\TP (2).png" alt="blankimage">
+    <img class="tp_nav" src="imgs\kate_tp.gif" alt="blankimage">
+    <ul class="tp_nav tp_extend" id="tp_list_extend">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </section>
+
+  <canvas id="renderCanvas" touch-action="none"></canvas>
+<script>
+  var canvas = document.getElementById("renderCanvas"); // Get the canvas element
+  var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
+
+  var createScene = function () {
+              var scene = new BABYLON.Scene(engine);
+
+              //camera view
+              var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0,5,-5), scene);
+              camera.setTarget(BABYLON.Vector3.Zero());
+              camera.attachControl(canvas,true);
+              camera.keysUp.push(87);    //W
+              camera.keysDown.push(83)   //D
+              camera.keysLeft.push(65);  //A
+              camera.keysRight.push(68); //S
+
+
+
+              //lights
+              var light2 = new BABYLON.PointLight("light2", new BABYLON.Vector3(0, 1, 5), scene);
+
+              BABYLON.SceneLoader.ImportMesh("", "testing/", "scene.babylon", scene, function (newMeshes) {});
+
+              // Enable Collisions
+              scene.collisionsEnabled = true;
+              camera.checkCollisions = true;
+              scene.checkCollisions = true;
+
+              return scene;
+          };
+            /******* End of the create scene function ******/
+
+            var scene = createScene();
+            engine.runRenderLoop(function () { // Register a render loop to repeatedly render the scene
+              scene.render();
+            });
+
+           window.addEventListener("resize", function () { // Watch for browser/canvas resize events
+                   engine.resize();
+           });
+</script>
+</html>

@@ -29,6 +29,10 @@ a:link{
   list-style-type: none;
 }
 
+#tp_mobile{
+  z-index: 4;
+  transform: translate(-106px,382px);
+}
 #tp_list_extend{
   z-index: 1;
   transform: translate(-50px,322px);
@@ -50,6 +54,9 @@ li{
 }
 #navagation:hover > #tp_list_extend{
   transform: translate(-50px,720px);
+}
+#navagation:hover > #tp_mobile{
+  transform: translate(-106px,550px);
 }
 
 #mirror_girl{
@@ -115,4 +122,12 @@ li{
 #door_text{
   padding: 2em;
   font-size: 2em;
+}
+
+#renderCanvas{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
 }
