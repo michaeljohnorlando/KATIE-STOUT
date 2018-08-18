@@ -7,7 +7,7 @@ a:link{
 }
 #background{
   position: absolute;
-  bottom: -91px;
+  bottom: 0px;
   width: 100vw;
   z-index: -2;
 }
@@ -77,19 +77,17 @@ li{
   height: 55vh;
   position: absolute;
   bottom: 129px;
-  left: 200px;
+  left: 279px;
   z-index: -1;
 }
 
 #share{
   margin: 0px;
   align-items: center;
-  height: 15vh;
   position: absolute;
-  left: 32vw;
-  bottom: -30px;
-  display:flex;
-  flex-direction: row;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
 }
 #share h2{
   font-size: 200%;
@@ -130,4 +128,13 @@ li{
   top: 0;
   height: 100vh;
   width: 100%;
+}
+
+@media only screen and (max-width: 1144px) {
+  #tp_mobile{
+    display: block;
+  }
+  #title {
+    display: none;
+  }
 }
