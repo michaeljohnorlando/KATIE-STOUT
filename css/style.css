@@ -6,6 +6,7 @@ a:link{
   color: black;
 }
 #background{
+  height: 29vh;
   position: absolute;
   bottom: 0px;
   width: 100vw;
@@ -30,6 +31,7 @@ a:link{
 }
 
 #tp_mobile{
+  display: none;
   z-index: 4;
   transform: translate(-106px,382px);
 }
@@ -64,20 +66,24 @@ li{
   bottom: 23px;
   left: 66px;
 }
+#mirror_girl_img{
+  height:60vh;
+}
 #mirror_girl_link:link{
   text-decoration: none;
 }
 #mirror_girl_link{
-  font-size: 415%;
+  font-size: 8vh;
   color: black;
   position: absolute;
-  transform: translate(78px,-459px);
+  bottom: 29vh;
+  left: 34px;
 }
 #lamp_girl{
   height: 55vh;
   position: absolute;
-  bottom: 129px;
-  left: 279px;
+  bottom: 103px;
+  left: 183px;
   z-index: -1;
 }
 
@@ -92,6 +98,9 @@ li{
 #share h2{
   font-size: 200%;
   width: 6em;
+}
+.shareimg{
+  height: 4vw;
 }
 #about_text{
   padding-left: 28%;
@@ -130,11 +139,32 @@ li{
   width: 100%;
 }
 
-@media only screen and (max-width: 1144px) {
-  #tp_mobile{
-    display: block;
-  }
-  #title {
+@media only screen and (max-width: 1000px) {
+  #title{
     display: none;
   }
+  #tp_mobile{
+    display: block;
+    z-index: 4;
+    transform: translate(-106px,382px);
+  }
+}
+@media only screen and (max-width: 800px) {
+  #lamp_girl{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    height: 55vh;
+    position: absolute;
+    bottom: 103px;
+    left: 70%;
+    z-index: -1;
+  }
+  #share figure{
+      margin: 0;
+  }
+
 }
