@@ -1,6 +1,8 @@
 body{
   font-family: 'Reenie Beanie', cursive;
+  margin: 0px;
 }
+
 a:link{
   text-decoration: none;
   color: black;
@@ -83,7 +85,7 @@ li{
   height: 55vh;
   position: absolute;
   bottom: 103px;
-  left: 183px;
+  transform: translate(200px,0px);
   z-index: -1;
 }
 
@@ -151,20 +153,16 @@ li{
 }
 @media only screen and (max-width: 800px) {
   #lamp_girl{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-    height: 55vh;
-    position: absolute;
-    bottom: 103px;
-    left: 70%;
     z-index: -1;
+    transform: translateX(116px);
   }
   #share figure{
       margin: 0;
   }
+  #mirror_girl {
+    position: absolute;
+    bottom: 56px;
+    left: -2px;
+}
 
 }
