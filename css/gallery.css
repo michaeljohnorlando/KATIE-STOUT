@@ -1,0 +1,49 @@
+body{
+  font-family: 'Reenie Beanie', cursive;
+  margin: 0px;
+}
+
+a:link{
+  text-decoration: none;
+  color: black;
+}
+#title{
+  width: 75%;
+  font-size: 700%;
+  text-align: center;
+  margin-top: 20px;
+}
+#doors{
+  display:flex;
+  flex-direction: column;
+}
+.door_section{
+  display: flex;
+  flex-direction: row;
+}
+.door{
+  padding: 0em 2em 2em 2em;
+  height: 70vh;
+}
+#door_text{
+  padding: 2em;
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 800px) {
+  #title{
+    display: none;
+  }
+  .door_section {
+    padding-top: 30vw;
+    flex-direction: column;
+  }
+  #door_text {
+    padding: 0em 2em 0em 2em;
+    font-size: 1.5em;
+  }
+  .door{
+    height: 48vh;
+  }
+
+}

@@ -62,34 +62,6 @@ a:link{
 .shareimg{
   height: 4vw;
 }
-#about_text{
-  padding-left: 28%;
-  width: 39%;
-  font-size: 1.5em;
-}
-#about_img{
-  position: absolute;
-  bottom: 6em;
-  right: 2em;
-  height: 52vh;
-}
-
-#doors{
-  display:flex;
-  flex-direction: column;
-}
-.door_section{
-  display: flex;
-  flex-direction: row;
-}
-.door{
-  padding: 0em 2em 2em 2em;
-  height: 70vh;
-}
-#door_text{
-  padding: 2em;
-  font-size: 2em;
-}
 
 #renderCanvas{
   position: absolute;
@@ -121,16 +93,5 @@ a:link{
     position: absolute;
     bottom: 56px;
     left: -2px;
-  }
-  #about_img{
-    position: relative;
-    bottom: 6em;
-    right: 2em;
-    height: 52vh;
-  }
-  #about_text{
-    padding-left: 0px;
-    width: auto;
-    font-size: 1.5em;
   }
 }

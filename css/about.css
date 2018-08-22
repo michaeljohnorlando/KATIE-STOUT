@@ -6,9 +6,20 @@ a:link{
   text-decoration: none;
   color: black;
 }
-#background, #title, #mirror_girl{
-  display: none;
+#background{
+  height: 29vh;
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  z-index: -2;
 }
+#title{
+  width: 75%;
+  font-size: 700%;
+  text-align: center;
+  margin-top: 20px;
+}
+
 #share{
   margin: 0px;
   align-items: center;
@@ -20,4 +31,51 @@ a:link{
 #share h2{
   font-size: 200%;
   width: 6em;
+}
+#about_text{
+  padding-left: 28%;
+  width: 39%;
+  font-size: 1.5em;
+}
+#about_img{
+  position: absolute;
+  bottom: 6em;
+  right: 2em;
+  height: 52vh;
+}
+#mirror_girl{
+  position: absolute;
+  bottom: 23px;
+  left: 66px;
+}
+#mirror_girl_img{
+  height:60vh;
+}
+#mirror_girl_link:link{
+  text-decoration: none;
+}
+#mirror_girl_link{
+  font-size: 8vh;
+  color: black;
+  position: absolute;
+  bottom: 29vh;
+  left: 34px;
+}
+
+@media only screen and (max-width: 800px) {
+  #title,#mirror_girl,#background,#share{
+    display: none;
+  }
+  #about_img {
+      padding-top: 31vw;
+      position: relative;
+      bottom: auto;
+          right: -4vw;
+      height: 46vh;
+  }
+  #about_text {
+      padding-left: 9vw;
+      width: 80%;
+      font-size: 1.5em;
+  }
 }
