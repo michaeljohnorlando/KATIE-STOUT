@@ -1,0 +1,23 @@
+body{
+  font-family: 'Reenie Beanie', cursive;
+  margin: 0px;
+}
+a:link{
+  text-decoration: none;
+  color: black;
+}
+#background, #title, #mirror_girl{
+  display: none;
+}
+#share{
+  margin: 0px;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+}
+#share h2{
+  font-size: 200%;
+  width: 6em;
+}
